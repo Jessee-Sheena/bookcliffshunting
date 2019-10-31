@@ -1,0 +1,89 @@
+body {
+    background-color: #8a887e;    
+    font-family: 'Inconsolata', monospace;
+    font-size: .85em;
+}
+header {
+    text-align: center;
+    font-size: 3vw;
+    color: #d3d3d0;
+    font-family: 'Rye', cursive;
+    position: relative;
+}
+header img{
+    max-width: 100%;
+    
+   
+}
+    header h1 {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content:center;
+        margin:20px 20px 0 20px;
+    }
+nav {
+    
+    font-family: 'Rye', cursive;
+    font-size: 1.8vw;    
+    color: #191717;
+}
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        max-width: 75%;
+        margin:auto;
+        padding: .2em;
+    }
+    nav li {
+        text-decoration: none;
+        justify-content: space-around;
+    }
+main {
+    background-color: #191717;
+    max-width: 90%;
+    margin: auto;
+    border: 15px solid #191717;
+}
+#innerDiv {
+    border: 15px solid #d3d3d0;
+    margin: auto;
+    background-color: #d3d3d0;
+}
+#BorderDiv {
+   
+    background-color: #d3d3d0;
+    border: solid 4px #191717;
+    padding: 0em 2em;
+}
+#imageLinksContainer {
+    max-width: 92%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.imageLinks {
+    max-width: 300px;
+    border: 15px solid #191717;
+}
+.imageInnerDiv {
+    background-color: #d3d3d0;
+    border: 15px solid #d3d3d0;
+    font-family:'Rye',cursive;
+    text-align: center;
+}
+.borderPic {
+    background-color: #d3d3d0;
+    border: 4px solid #191717;
+}
+.pics {
+    max-width: 100%;
+}
