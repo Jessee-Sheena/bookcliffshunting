@@ -33,18 +33,71 @@ nav {
     font-size: 1.8vw;    
     color: #191717;
 }
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-around;
-        max-width: 75%;
-        margin:auto;
-        padding: .2em;
+#navBar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    max-width: 75%;
+    margin:auto;
+    padding: .2em;
+
+}
+#navBar a {
+    text-decoration: none;
+    justify-content: space-around;
+    color: #191717;
+
+}
+#navBar a:visited {
+    color: #d3d3d0;
+
+}
+#navBar a:hover {
+    color:#191717;
+    text-decoration:underline;
+
+}
+div.dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #191717;
+    border: 1px solid #191717;
+   
+}
+div.dropdown2 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #191717;
+    border: 1px solid #191717;
+   
+}
+div#drop1.dropdown a {
+    color: #d3d3d0;
+}
+div#drop1.dropdown a:visited {
+    color: #191717;
+}
+
+div#drop1.dropdown a:hover {
+    color: #191717;
+    background-color: #d3d3d0;
+}
+div#drop2.dropdown2 a {
+    color: #d3d3d0;
+}
+
+    div#drop2.dropdown2 a:visited {
+        color: #191717;
     }
-    nav li {
-        text-decoration: none;
-        justify-content: space-around;
+
+    div#drop2.dropdown2 a:hover {
+        color: #191717;
+        background-color: #d3d3d0;
     }
 main {
     background-color: #191717;
@@ -74,11 +127,21 @@ main {
     max-width: 300px;
     border: 15px solid #191717;
 }
+    .imageLinks:hover {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(25,23,23,0.53);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(25,23,23,0.53);
+        box-shadow: 10px 10px 5px 0px rgba(25,23,23,0.53);
+    }
 .imageInnerDiv {
     background-color: #d3d3d0;
     border: 15px solid #d3d3d0;
     font-family:'Rye',cursive;
     text-align: center;
+    font-size: 1vw;
+}
+.imageInnerDiv a {
+    text-decoration: none;
+    color: #191717;
 }
 .borderPic {
     background-color: #d3d3d0;
