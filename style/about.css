@@ -16,6 +16,12 @@ h3 {
     padding-left: 1em;
     font-size: 1.5em;
 }
+iframe {
+    border-width: 0;
+    width: 500px;
+    height: 300px;
+         
+}
 
 #bodyParagraph {
     padding: 0em 1em;
@@ -27,6 +33,19 @@ h3 {
         grid-gap: 2em;
         padding: 1em;
     }
-}
+        iframe {
+        border-width: 0;
+        width: 400px;
+        height: 200px;
+    }
+ }
+   
 
+@media only screen and (max-width: 650px) {
+    iframe {
+        border-width: 0;
+        width: 200px;
+        height: 100px;
+    }
+}
 

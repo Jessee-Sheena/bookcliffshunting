@@ -20,3 +20,18 @@ h3 {
 #bodyParagraph {
     padding: 0em 1em;
 }
+@media only screen and (max-width: 999px) {
+    #imgDiv {
+        display: none;
+    }
+
+    #inside {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        padding: 1em;
+    }
+
+ }
+
+

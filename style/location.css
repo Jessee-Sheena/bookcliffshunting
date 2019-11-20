@@ -25,6 +25,27 @@ h3 {
     padding: 0em 1em;
 }
 
-div#paragraph {
-    grid-column: 2 / 4;
+@media only screen and (min-width: 800px) {
+    div#paragraph {
+        grid-column: 2 / 4;
+    }
+}
+
+@media only screen and ( min-width: 600px) and (max-width: 799px) {
+    #imgDiv {
+        grid-column: 1 / 4;
+    }
+
+    div#paragraph {
+        grid-column: 1 / 4;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    #inside {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        padding: 1em;
+    }
 }
