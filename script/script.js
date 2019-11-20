@@ -53,7 +53,7 @@ $(document).ready(function () {
         $(".slideout2").finish().slideDown('medium');
     }, function () {
             $(".slideout2").finish().slideUp('medium');
-            $("#navBar").finish().slideUp('medium');
+           
     });
 });
 
