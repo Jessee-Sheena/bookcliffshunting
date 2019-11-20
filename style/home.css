@@ -1,0 +1,302 @@
+body {
+    background-color: #8a887e;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+    body h3 {
+        font-family: 'Sancreek', cursive;
+    }
+header {
+    text-align: center;
+    font-size: 3vw;
+    color: #d3d3d0;   
+    font-family: 'Sancreek', cursive;   
+    position: relative;
+    font-stretch: ultra-condensed;
+}
+header img{
+    max-width: 100%;
+    
+   
+}
+    header h1 {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content:center;
+        margin:20px 20px 0 20px;
+    }
+nav {
+    /*font-family: 'Rye', cursive;*/
+    font-family: 'Sancreek', cursive;
+    font-size: 1.9vw;
+    color: #191717;
+}
+@media only screen and (min-width: 700px) {
+    #hamburger {
+        display: none;
+    }
+    
+    #navBar {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        max-width: 55%;
+        margin: 0em auto .5em auto;
+        padding: .2em;
+    }
+
+        #navBar a {
+            text-decoration: none;
+            justify-content: space-around;
+            color: #191717;
+        }
+
+            #navBar a:visited {
+                color: #d3d3d0;
+            }
+
+            #navBar a:hover {
+                color: #191717;
+                text-decoration: underline;
+            }
+
+    div.dropdown {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #191717;
+        border: 1px solid #191717;
+    }
+
+    div.dropdown2 {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #191717;
+        border: 1px solid #191717;
+    }
+
+    div#drop1.dropdown a {
+        color: #8a887e;
+        padding: .2em 3.5em .2em .2em;
+    }
+
+        div#drop1.dropdown a:visited {
+            color: #d3d3d0;
+        }
+
+        div#drop1.dropdown a:hover {
+            color: #191717;
+            background-color: #d3d3d0;
+        }
+
+    div#drop2.dropdown2 a {
+        color: #8a887e;
+        padding: .2em .2em .2em .2em;
+    }
+
+        div#drop2.dropdown2 a:visited {
+            color: #d3d3d0;
+        }
+
+        div#drop2.dropdown2 a:hover {
+            color: #191717;
+            background-color: #d3d3d0;
+        }
+    .imageInnerDiv a {
+        text-decoration: none;
+        color: #191717;
+        font-size: 1.2vw;
+    }
+}
+    main {
+        background-color: #191717;
+        max-width: 70%;
+        margin: auto;
+        border: 15px solid #191717;
+    }
+
+    #innerDiv {
+        border: 15px solid #d3d3d0;
+        margin: auto;
+        background-color: #d3d3d0;
+    }
+
+    #BorderDiv {
+        background-color: #d3d3d0;
+        border: solid 4px #191717;
+    }
+@media only screen and (min-width: 966px) {
+    #imageLinksContainer {
+        max-width: 72%;
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+}
+
+    .imageLinks {
+        max-width: 300px;
+        border: 15px solid #191717;
+    }
+
+        .imageLinks:hover {
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(25,23,23,0.53);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(25,23,23,0.53);
+            box-shadow: 10px 10px 5px 0px rgba(25,23,23,0.53);
+        }
+
+    .imageInnerDiv {
+        background-color: #d3d3d0;
+        border: 15px solid #d3d3d0;
+        font-family: 'Sancreek', cursive;
+        text-align: center;
+    }
+
+       
+
+    .borderPic {
+        background-color: #d3d3d0;
+        border: 4px solid #191717;
+    }
+
+    .pics {
+        max-width: 100%;
+    }
+
+    #landowner a {
+        font-size: 1.2vw;
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 965px){
+        #imageLinksContainer {
+            max-width: 72%;
+            margin: 3em auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-gap: 1em;
+        }
+    }
+@media only screen and (min-width: 250px) and (max-width: 699px) {
+    #imageLinksContainer {
+        max-width: 72%;
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        justify-items: center;
+       
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #hamMenu {
+        display: inline;
+    }
+
+    img#hamburger {
+        max-width: 7vw;
+    }
+
+    div#navBar {
+        display: none;
+        background-color: #191717;
+        max-width: 35%;
+        font-size: 3.5vw;
+        margin: 0em auto .5em auto;
+        padding: .2em;
+        text-align: left;
+    }
+
+    #navBar a {
+        text-decoration: none;
+        justify-content: space-around;
+        color: #8a887e;
+        display: block;
+    }
+
+        #navBar a:visited {
+            color: #d3d3d0;
+        }
+
+        #navBar a:hover {
+            color: #191717;
+            background-color: #d3d3d0;
+        }
+
+    div.dropdown {
+        display: none;
+    }
+
+    .drowpdownBt1.slideoutBt1  {       
+        display: grid;
+        
+    }
+    .drowpdownBt2.slideoutBt2 {
+        display: grid;
+    }
+    div.slideout {
+        display: none;
+        position: absolute;       
+        left: 68%;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #191717;
+        border: 1px solid #191717;
+    }
+
+    div.dropdown2 {
+        display: none;
+        position: absolute;
+        left: 68%;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #191717;
+        border: 1px solid #191717;
+    }
+
+        div#drop1.dropdown a {
+            color: #8a887e;
+            padding: .2em 3.5em .2em .2em;
+        }
+
+            div#drop1.dropdown a:visited {
+                color: #d3d3d0;
+            }
+
+            div#drop1.dropdown a:hover {
+                color: #191717;
+                background-color: #d3d3d0;
+            }
+
+        div#drop2.dropdown2 a {
+            color: #8a887e;
+            padding: .2em .2em .2em .2em;
+        }
+
+            div#drop2.dropdown2 a:visited {
+                color: #d3d3d0;
+            }
+
+            div#drop2.dropdown2 a:hover {
+                color: #191717;
+                background-color: #d3d3d0;
+            }
+    .imageInnerDiv a {
+        text-decoration: none;
+        color: #191717;
+        font-size: 3vw;
+    }
+}

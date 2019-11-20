@@ -6,10 +6,10 @@
     <title>Book Cliffs Hunting</title>
     <meta name="viewport" content="width=device-width, initial-scale =1, maximum-scale=1" />
     <meta name="description" content="Bookk cliffs utah hunting guide. Trophy elk, buck, moose, ram, bear hunts. lodging available" />
-    <link rel="stylesheet" href="home.css" />
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Sancreek&display=swap" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 
 
 </head>
@@ -19,44 +19,34 @@
         <h1>BOOK CLIFFS HUNTING</h1>
     </header>
     <nav>
-        <div id="navBar">
-            <a href="home.html">Home</a>
-            <div class="drowpdownBt1">
-                <a  href="hunts.html">Guided Hunts</a>
-                <div class="dropdown" id="drop1">
-                    <a>Elk</a>
-                    <a>Deer</a>
-                    <a>Sheep</a>
-                    <a>Other</a>
+        <div id="hamMenu">
+            <img id="hamburger" src="images/hamMenu.png" alt="hamburger menu" />
+
+            <div id="navBar">
+                <a href="home.html">Home</a>
+                <div class="drowpdownBt1 slideoutBt1">
+                    <a>Guided Hunts</a>
+                    <div class="dropdown slideout" id="drop1">
+                        <a href="elkHunts.html">Elk</a>
+                        <a href="deerHunts.html">Deer</a>
+                        <a href="sheepHunts.html">Sheep</a>
+                        <a href="otherHunts.html">Other</a>
+                    </div>
                 </div>
-            </div>
-            <a href="pricing.html">Pricing</a>
-            <div class="drowpdownBt2">
-                <a href="supplies.html">Supply info</a>
-                <div class="dropdown2" id="drop2">
-                    <a>supply list</a>
-                    <a>Rent </a>                    
+                <a href="pricing.html">Pricing</a>
+                <div class="drowpdownBt2 slideoutBt2">
+                    <a>Supply info</a>
+                    <div class="dropdown2 slideout2" id="drop2">
+                        <a href="supplies.html">Supply List</a>
+                        <a href="suppliesRentals.html">Rent </a>
+                    </div>
                 </div>
+                <a href="contact.html">Contact Info</a>
+                <a href="faq.html">Faq</a></>
             </div>
-            <a href="contact.html">Contact Info</a>
-            <a href="faq.html">Faq</a></>
         </div>
-       
     </nav>
-    <main>
-        <div id="innerDiv">
-            <div id="BorderDiv">
-                <p>
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis viverra dui, eu rutrum lectus volutpat at. Aenean egestas nisl sit amet lorem fermentum rutrum. Aliquam dui felis, vestibulum eu eros in, tempus dictum libero. Quisque sit amet eros sollicitudin erat consequat semper elementum nec nibh. Integer nec nisi auctor, rutrum enim et, vulputate ipsum. Nulla facilisi. Etiam neque ante, sodales vel sodales nec, viverra at nibh. Aliquam vitae luctus augue, at vehicula tellus. Cras sem arcu, fringilla et felis eget, pretium ultrices risus. Nam sed eleifend ligula. Quisque at mollis enim, eu tempus massa. Morbi vitae egestas tortor. Sed quis mi tincidunt, venenatis nulla a, efficitur erat. Sed finibus ligula sed urna vehicula vestibulum.
-                    Nam laoreet tortor non finibus dictum. Aliquam erat volutpat. Suspendisse posuere viverra arcu, et egestas mi varius non. Aliquam euismod erat purus. Aliquam sagittis, dui vel tincidunt euismod, nisi risus facilisis ipsum, ut vestibulum urna leo ut orci. Fusce sed elementum orci, ut consequat nulla. Fusce sit amet neque eros. In hac habitasse platea dictumst. Etiam egestas tincidunt venenatis. Pellentesque arcu massa, sagittis quis interdum eget, venenatis at tellus. Nam a mollis ex, quis pretium enim. Aliquam erat volutpat.
-                    Vivamus bibendum gravida luctus. Vivamus semper accumsan ex, vel dictum ex viverra ut. Praesent fermentum, mi quis finibus rutrum, lectus erat sagittis metus, a dictum nisi erat a augue. Suspendisse malesuada mollis faucibus. Praesent viverra fermentum venenatis. Aliquam pretium sagittis tellus. Curabitur ac porttitor tortor. Nullam non libero lectus. Praesent ante risus, sodales eu diam vel, finibus fermentum libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus et consectetur orci, ac maximus odio. Cras et felis ac nulla elementum vestibulum. Suspendisse elit nisi, volutpat et libero nec, convallis suscipit es
-                </p>
-
-            </div>
-
-        </div>
-    </main>
+    
     <div id="imageLinksContainer">
         <div class="imageLinks">
             <div class="imageInnerDiv">
@@ -71,7 +61,7 @@
             <div class="imageInnerDiv">
                 <div class="borderPic">
                     <img class="pics" src="images/pond_link.jpg" alt="man with a dead buck" />
-                    <h2><a href="aboutLocation.html">About the Location</a></h2>
+                    <h2><a href="aboutLocation.html">Location Info</a></h2>
                     </div>
                 </div>
             </div>
@@ -115,11 +105,11 @@
                     </div>
                 </div>
             </div>
-        <div class="imageLinks">
+        <div class="imageLinks" id="hunt">
             <div class="imageInnerDiv">
                 <div class="borderPic">
                     <img class="pics" src="images/deer_silhouettelink.jpg" alt="man with a dead buck" />
-                    <h2><a href="apply.html">Apply for Hunts </a></h2>
+                    <h2><a href="https://www.utah-hunt.com/" target="_blank">Apply for Hunts </a></h2>
                     </div>
                 </div>
             </div>

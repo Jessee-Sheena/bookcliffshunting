@@ -1,0 +1,22 @@
+#inside {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    
+    padding: 1em;
+}
+
+.img1 {
+    max-width: 100%;
+    border: 3px solid #191717;
+}
+
+
+h3 {
+    text-decoration: underline;
+    padding-left: 1em;
+    font-size: 1.5em;
+}
+
+#bodyParagraph {
+    padding: 0em 1em;
+}
