@@ -67,3 +67,10 @@ $(document).ready(function () {
 
     })
 })
+$(document).ready(function () {
+    $("#hamMenu").on("mouseleave", function () {
+        
+        $("#navBar").finish().slideUp('medium');
+
+    })
+})
