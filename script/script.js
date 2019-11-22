@@ -60,17 +60,17 @@ $(document).ready(function () {
 /***************************
  * Hamburger Menu
  **************************/
-$(document).ready(function () {
+/*$(document).ready(function () {
     $("#hamburger").hover(function () {
         $("#navBar").css('display', "block");
         $("#navBar").finish().slideDown('medium');
 
     })
-})
+})*/
 $(document).ready(function () {
-    $("#hamMenu").on("mouseleave", function () {
+    $("#hamburger").click( function () {
         
-        $("#navBar").finish().slideUp('medium');
+        $("#navBar").toggleClass('active');
 
     })
 })

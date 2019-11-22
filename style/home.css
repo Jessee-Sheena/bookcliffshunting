@@ -117,13 +117,14 @@ nav {
         color: #191717;
         font-size: 1.2vw;
     }
-}
     main {
         background-color: #191717;
         max-width: 70%;
         margin: auto;
         border: 15px solid #191717;
     }
+}
+   
 
     #innerDiv {
         border: 15px solid #d3d3d0;
@@ -212,13 +213,20 @@ nav {
 
     div#navBar {
         display: none;
-        background-color: #191717;
-        max-width: 35%;
-        font-size: 3.5vw;
-        margin: 0em auto .5em auto;
-        padding: .2em;
-        text-align: left;
+        
     }
+        div#navBar.active {
+            display: block;
+            background-color: #191717;
+            max-width: 35%;
+            font-size: 3.5vw;
+            margin: 0em auto .5em auto;
+            padding: .2em;
+            text-align: left;
+            z-index: 1;
+            position:absolute;
+            left: 40%;
+        }
 
     #navBar a {
         text-decoration: none;
@@ -250,7 +258,7 @@ nav {
     div.slideout {
         display: none;
         position: absolute;       
-        left: 68%;
+        left: 100.5%;
         flex-direction: column;
         z-index: 1;
         background-color: #191717;
@@ -260,7 +268,7 @@ nav {
     div.dropdown2 {
         display: none;
         position: absolute;
-        left: 68%;
+        left: 101%;
         flex-direction: column;
         z-index: 1;
         background-color: #191717;
@@ -298,5 +306,11 @@ nav {
         text-decoration: none;
         color: #191717;
         font-size: 3vw;
+    }
+    main {
+        background-color: #191717;
+        max-width: 95%;
+        margin: auto;
+        border: 15px solid #191717;
     }
 }
