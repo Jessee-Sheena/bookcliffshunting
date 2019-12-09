@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/home.css" />
     <link rel="stylesheet" href="style/supplies.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Sancreek&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:700&display=swap" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
 
@@ -24,29 +25,28 @@
             <img id="hamburger" src="images/hamMenu.png" alt="hamburger menu" />
 
             <div id="navBar">
-                <a href="index.html">Home</a>
+                <a id="index" class="current" href="index.html#index">HOME</a>
                 <div class="drowpdownBt1 slideoutBt1">
-                    <a>Guided Hunts</a>
+                    <a id="guide">GUIDED HUNTS</a>
                     <div class="dropdown slideout" id="drop1">
-                        <a href="elkHunts.html">Elk</a>
-                        <a href="deerHunts.html">Deer</a>
-                        <a href="sheepHunts.html">Sheep</a>
-                        <a href="otherHunts.html">Other</a>
+                        <a id="elk" class="current" href="elkHunts.html#guide">ELK</a>
+                        <a id="deer" class="current" href="deerHunts.html#guide">DEER</a>
+                        <a id="sheep" class="current" href="sheepHunts.html#guide">SHEEP</a>
+                        <a id="other" class="current" href="otherHunts.html#guide">OTHER</a>
                     </div>
                 </div>
-                <a href="pricing.html">Pricing</a>
+                <a id="pricing" href="pricing.html#pricing">PRICING</a>
                 <div class="drowpdownBt2 slideoutBt2">
-                    <a>Supply info</a>
+                    <a id="supply">SUPPLY INFO</a>
                     <div class="dropdown2 slideout2" id="drop2">
-                        <a href="supplies.html">Supply List</a>
-                        <a href="suppliesRentals.html">Rent </a>
+                        <a id="list" class="current" href="supplies.html#supply">SUPPLY LIST</a>
+                        <a id="rent" class="current" href="suppliesRentals.html#supply">RENT </a>
                     </div>
                 </div>
-                <a href="contact.html">Contact Info</a>
-                <a href="faq.html">Faq</a></>
+                <a id="contact" class="current" href="contact.html#contact">CONTACT INFO</a>
+                <a id="faq" class="current" href="faq.html#faq">FAQ</a>
             </div>
         </div>
-
     </nav>
     <main>
         <div id="innerDiv">
@@ -198,7 +198,7 @@
                 </div>
             </div>
         </div>
-        <div class="imageLinks">
+        <div class="imageLinks" id="hunt">
             <div class="imageInnerDiv">
                 <div class="borderPic">
                     <img class="pics" src="images/deer_silhouettelink.jpg" alt="man with a dead buck" />
